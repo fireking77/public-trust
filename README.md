@@ -16,22 +16,24 @@ verifier gets the signer's public key from a channel **independent of the
 signed artifact** — this repository, cross-checked against the maintainer's
 public identity above. Pin the fingerprint from `FINGERPRINTS.md`, then verify.
 
-## Layout
-
-```
-FINGERPRINTS.md            – the pin list (every key's SHA-256)
-SECURITY.md                – key-rotation policy + contact
-artifact-signing/maia/     – cosign key + exact verify commands for maia
-ssh/darvas_istvan.pub      – authorized SSH public key (also at
-                             https://github.com/fireking77.keys)
-```
-
 ## Index
 
-| Item | Where |
-|------|-------|
-| **maia** release verification (images + Helm chart) | [`artifact-signing/maia/`](artifact-signing/maia/) |
-| Authorized SSH public key | [`ssh/darvas_istvan.pub`](ssh/darvas_istvan.pub) |
+### Artifact signing (cosign)
+
+| Project | Where |
+|---------|-------|
+| maia — images + Helm chart | [`artifact-signing/maia/`](artifact-signing/maia/) |
+
+### SSH
+
+| Key | Where |
+|-----|-------|
+| Authorized public key (mirror of `github.com/fireking77.keys`) | [`ssh/darvas_istvan.pub`](ssh/darvas_istvan.pub) |
+
+### Reference
+
+- Pin list (all fingerprints) — [`FINGERPRINTS.md`](FINGERPRINTS.md)
+- Key rotation & contact — [`SECURITY.md`](SECURITY.md)
 
 ## Contact
 
