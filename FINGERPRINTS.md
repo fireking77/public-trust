@@ -25,3 +25,17 @@ echo "5f8971916aaf99377c83287f24e44e8cd4e5880ca8d380347beaa8b8560493c7  cosign.p
 ssh-keygen -l -f ssh/darvas_istvan.pub
 # 2048 SHA256:D7SMUaDxSBsbWMZUVJc/lRKNoIyC6oqAHLfJXBd4g84 darvas.istvan@DESKTOP-NBQDMG5 (RSA)
 ```
+
+## sops-age
+
+Cross-project SOPS recipient public key — usable as `recipient:` in any `.sops.yaml` where Istvan Darvas is an authorized decryptor (e.g., the Maia platform's `_local/k3s/maia-{dev,uat}/.sops.yaml`).
+
+| File | SHA-256 (file) | Public key | Type | Status | Since |
+|------|----------------|------------|------|--------|-------|
+| `sops-age/darvas_istvan.age.pub` | `7f32933f02c62a8f002eb01662a958bfb8e1d22811bd84c3f4d46d919dab9b1c` | `age1v2xjavmsd4k8ntsugaxxkpa539uxemp4gjknvnnselxwylx5g4lsj3jswv` | X25519 (age) | ACTIVE | 2026-05-23 |
+
+```sh
+curl -fsSL -o darvas_istvan.age.pub \
+  https://raw.githubusercontent.com/fireking77/public-trust/main/sops-age/darvas_istvan.age.pub
+echo "7f32933f02c62a8f002eb01662a958bfb8e1d22811bd84c3f4d46d919dab9b1c  darvas_istvan.age.pub" | sha256sum -c
+```

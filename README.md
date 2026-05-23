@@ -30,6 +30,12 @@ public identity above. Pin the fingerprint from `FINGERPRINTS.md`, then verify.
 |-----|-------|
 | Authorized public key (mirror of `github.com/fireking77.keys`) | [`ssh/darvas_istvan.pub`](ssh/darvas_istvan.pub) |
 
+### SOPS (age recipient)
+
+| Key | Where |
+|-----|-------|
+| Cross-project SOPS recipient public key (X25519) | [`sops-age/darvas_istvan.age.pub`](sops-age/darvas_istvan.age.pub) |
+
 ### Reference
 
 - Pin list (all fingerprints) — [`FINGERPRINTS.md`](FINGERPRINTS.md)
