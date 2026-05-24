@@ -26,9 +26,12 @@ public identity above. Pin the fingerprint from `FINGERPRINTS.md`, then verify.
 
 ### SSH
 
+Authorized public keys — together mirror `github.com/fireking77.keys`.
+
 | Key | Where |
 |-----|-------|
-| Authorized public key (mirror of `github.com/fireking77.keys`) | [`ssh/darvas_istvan.pub`](ssh/darvas_istvan.pub) |
+| RSA 2048 (`darvas.istvan@DESKTOP-NBQDMG5`) | [`ssh/darvas_istvan.pub`](ssh/darvas_istvan.pub) |
+| ED25519 (`darvas.istvan@gmail.com 20260524`) | [`ssh/darvas_istvan_20260524.pub`](ssh/darvas_istvan_20260524.pub) |
 
 ### SOPS (age recipient)
 

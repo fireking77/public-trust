@@ -17,13 +17,20 @@ echo "5f8971916aaf99377c83287f24e44e8cd4e5880ca8d380347beaa8b8560493c7  cosign.p
 
 ## ssh
 
-| File | SHA-256 (file) | ssh-keygen SHA256 | Comment | Type |
-|------|----------------|-------------------|---------|------|
-| `ssh/darvas_istvan.pub` | `a1df8780406ce96bd45bcf76347a797d936219d546d3d17f7e5ea442c3372f2a` | `SHA256:D7SMUaDxSBsbWMZUVJc/lRKNoIyC6oqAHLfJXBd4g84` | `darvas.istvan@DESKTOP-NBQDMG5` | RSA 2048 |
+One file per authorized public key — together they mirror the key list at
+<https://github.com/fireking77.keys>.
+
+| File | SHA-256 (file) | ssh-keygen SHA256 | Comment | Type | Since |
+|------|----------------|-------------------|---------|------|-------|
+| `ssh/darvas_istvan.pub` | `a1df8780406ce96bd45bcf76347a797d936219d546d3d17f7e5ea442c3372f2a` | `SHA256:D7SMUaDxSBsbWMZUVJc/lRKNoIyC6oqAHLfJXBd4g84` | `darvas.istvan@DESKTOP-NBQDMG5` | RSA 2048 | 2026-05-19 |
+| `ssh/darvas_istvan_20260524.pub` | `53d27401601a3f7ec8c50821987525fe29f85ce6500c41c0fcc0b5ab0755ef4a` | `SHA256:HSiYYDDRC8ofrPpulvKTUQ0nqgf/IkmjkT8G2PsM3Jk` | `darvas.istvan@gmail.com 20260524` | ED25519 | 2026-05-24 |
 
 ```sh
 ssh-keygen -l -f ssh/darvas_istvan.pub
 # 2048 SHA256:D7SMUaDxSBsbWMZUVJc/lRKNoIyC6oqAHLfJXBd4g84 darvas.istvan@DESKTOP-NBQDMG5 (RSA)
+
+ssh-keygen -l -f ssh/darvas_istvan_20260524.pub
+# 256 SHA256:HSiYYDDRC8ofrPpulvKTUQ0nqgf/IkmjkT8G2PsM3Jk darvas.istvan@gmail.com 20260524 (ED25519)
 ```
 
 ## sops-age
