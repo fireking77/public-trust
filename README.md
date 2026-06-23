@@ -39,6 +39,14 @@ Authorized public keys — together mirror `github.com/fireking77.keys`.
 |-----|-------|
 | Cross-project SOPS recipient public key (X25519) | [`sops-age/darvas_istvan.age.pub`](sops-age/darvas_istvan.age.pub) |
 
+### WireGuard
+
+Interface public key — a peer puts it in its `[Peer] PublicKey = …` block.
+
+| Key | Where |
+|-----|-------|
+| Peer public key (Curve25519 / X25519) | [`wireguard/darvas_istvan.pub`](wireguard/darvas_istvan.pub) |
+
 ### Reference
 
 - Pin list (all fingerprints) — [`FINGERPRINTS.md`](FINGERPRINTS.md)

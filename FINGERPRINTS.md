@@ -46,3 +46,19 @@ curl -fsSL -o darvas_istvan.age.pub \
   https://raw.githubusercontent.com/fireking77/public-trust/main/sops-age/darvas_istvan.age.pub
 echo "7f32933f02c62a8f002eb01662a958bfb8e1d22811bd84c3f4d46d919dab9b1c  darvas_istvan.age.pub" | sha256sum -c
 ```
+
+## wireguard
+
+WireGuard interface public key — a peer puts this value in its `[Peer]
+PublicKey = …` block. WireGuard has no cipher negotiation, so the key value is
+the only thing to pin.
+
+| File | SHA-256 (file) | Public key | Type | Status | Since |
+|------|----------------|------------|------|--------|-------|
+| `wireguard/darvas_istvan.pub` | `943c01e1f84b474eca5c417cf0b9e9082db8614e554fe3fa419d36915de0e10e` | `DYe1gF4RGcjCkHlMJKbMdLb6ov7vOemEgQpEYWJMRnc=` | Curve25519 (X25519) | ACTIVE | 2026-06-23 |
+
+```sh
+curl -fsSL -o darvas_istvan.pub \
+  https://raw.githubusercontent.com/fireking77/public-trust/main/wireguard/darvas_istvan.pub
+echo "943c01e1f84b474eca5c417cf0b9e9082db8614e554fe3fa419d36915de0e10e  darvas_istvan.pub" | sha256sum -c
+```
